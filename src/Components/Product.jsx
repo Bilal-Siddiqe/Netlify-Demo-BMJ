@@ -1,10 +1,15 @@
 import React from 'react'
+import { Outlet } from "react-router-dom";
 
 function Product() {
   return (
-    <div className='display-1'>
-      Product
-    </div>
+    <>
+      <div>Product Starts</div>
+
+      <Outlet/> 
+
+      <div>Product Ends</div>
+    </>
   )
 }
 
